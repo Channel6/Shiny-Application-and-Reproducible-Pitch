@@ -15,7 +15,9 @@ data("airquality")
 shinyServer(function(input, output, session) {
   plotvals <- eventReactive(input$do, {
     input$sliderTemp
-  })
+  },
+    ignoreNULL = FALSE
+  )
   
   output$plot1 <- renderPlot({
     desiredmonth <- airquality[airquality$Month == plotvals(), ]
