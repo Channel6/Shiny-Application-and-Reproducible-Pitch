@@ -18,7 +18,8 @@ shinyUI(fluidPage(
   #pageWithSidebar (
   headerPanel("New York Ozone Temperature"),
   sidebarPanel(
-    sliderInput("sliderTemp", "Which month?", 5, 9, value = 5),
+    selectInput("sliderTemp", "Which month?", c(5:9), selected = 5),
+    #sliderInput("sliderTemp", "Which month?", 5, 9, value = 5),
     actionButton("do", "Calculate temperature")
   ),
   # Show a plot of the generated distribution
