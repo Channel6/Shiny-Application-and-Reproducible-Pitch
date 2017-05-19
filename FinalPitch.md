@@ -1,37 +1,47 @@
-FinalPitch
+Course Project: Shiny Application and Reproducible Pitch
 ========================================================
-author: 
-date: 
+author: Glenn Kerbein
+date: May 18, 2017
 autosize: true
 
-First Slide
+Instructions
 ========================================================
 
-For more details on authoring R presentations please visit <https://support.rstudio.com/hc/en-us/articles/200486468>.
+This peer assessed assignment has two parts.
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+1. Create a Shiny application and deploy it on Rstudio's servers.
+2. Use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
 
-Slide With Code
+
+Data Use in Project: Air Quality
 ========================================================
 
+This application will provide a fitted regression line, with Temperature as the predictor and Ozone as the input.
+From the Ozone dataset, in the ```datasets`` library:
 
-```r
-summary(cars)
-```
+Daily air quality measurements in New York, May to September 1973.
 
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
+**Ozone**: Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island
 
-Slide With Plot
+**Solar.R**: Solar radiation in Langleys in the frequency band 4000–7700 Angstroms from 0800 to 1200 hours at Central Park
+
+**Wind**: Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport
+
+**Temp**: Maximum daily temperature in degrees Fahrenheit at La Guardia Airport.
+
+
+Data Use in Project: Air Quality
 ========================================================
 
-![plot of chunk unnamed-chunk-2](FinalPitch-figure/unnamed-chunk-2-1.png)
+```r{echo = TRUE}
+summary(ozone)
+```
+
+Final output
+========================================================
+
+The Shiny application below shows the trend of how Ozone affects Temperature per month.
+
+[Final R Shiny App](https://channel6.shinyapps.io/ozone_input/ "Hosted on ShinyApps.io")
+
+[GitHub Project](https://github.com/Channel6/Shiny-Application-and-Reproducible-Pitch)
