@@ -8,14 +8,20 @@
 #
 
 library(shiny)
+library(datasets)
+data("airquality")
 
 # Define server logic required to draw a histogram
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
+  plotvals <- eventReactive(input$do, {
+    input$sliderTemp
+  })
+  
   output$plot1 <- renderPlot({
-    TempInput <- input$sliderTemp
+    desiredmonth <- airquality[airquality$Month == plotvals(), ]
     plot(
-      airquality$Temp,
-      airquality$Ozone,
+      desiredmonth$Temp,
+      desiredmonth$Ozone,
       xlab = "Temperature",
       ylab = "Ozone",
       bty = "n",
@@ -26,7 +32,7 @@ shinyServer(function(input, output) {
       abline(
         lm(
           Ozone ~ Temp,
-          data = airquality,
+          data = desiredmonth,
           col = "red",
           lwd = 2
         )
