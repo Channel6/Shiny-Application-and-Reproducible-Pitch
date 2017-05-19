@@ -55,3 +55,7 @@ Your presentation must satisfy the following:
 * Was the server calculation displayed in the html page?
 * Here's your opportunity to give this presentation a +1 for being well done. Did they tinker around with the default style? Was the presentation particularly lucid and well organized? In other words, the student made a legitimate try.
 * There were no R errors displayed in the presentation.
+
+# Final product
+
+[Final R Shiny App](https://channel6.shinyapps.io/ozone_input/ "Hosted on ShinyApps.io")
