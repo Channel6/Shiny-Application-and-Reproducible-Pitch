@@ -15,8 +15,6 @@ shinyUI(fluidPage(
   # Application title
   titlePanel("New York Ozone Temperature"),
   # sidebar
-  #pageWithSidebar (
-  headerPanel("New York Ozone Temperature"),
   sidebarPanel(
     selectInput("sliderTemp", "Which month?", c(5:9), selected = 5),
     #sliderInput("sliderTemp", "Which month?", 5, 9, value = 5),
