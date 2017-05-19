@@ -37,30 +37,6 @@ shinyServer(function(input, output, session) {
           lwd = 2
         )
       )
-      #,observeEvent(
-      #  input$do, {
-      #    MonthTemp <- airquality[airquality$Month == TempInput, ]
-      #    plot(
-      #      MonthTemp$Temp,
-      #      MonthTemp$Ozone,
-      #      xlab = "Temperature",
-      #      ylab = "Ozone",
-      #      bty = "n",
-      #      pch = 13,
-      #      col = "blue",
-      #      xlim = c(50, 100),
-      #      ylim = c(0, 150),
-      #      abline(
-      #        lm(
-      #          Ozone ~ Temp,
-      #          data = MonthTemp,
-      #          col = "red",
-      #          lwd = 2
-      #        )
-      #      )
-      #    )
-      #  }
-      #)
     )
   })
 })
