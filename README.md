@@ -59,5 +59,6 @@ Your presentation must satisfy the following:
 # Final product
 
 [Final R Shiny App](https://channel6.shinyapps.io/ozone_input/ "Hosted on ShinyApps.io")
+
 [Slides available on RPubs](https://rpubs.com/Channel6/Shiny-Application-Pitch)
 
